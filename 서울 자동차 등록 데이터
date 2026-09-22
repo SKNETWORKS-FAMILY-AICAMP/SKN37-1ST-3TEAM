@@ -1,0 +1,95 @@
+import requests
+import pandas as pd
+import time
+
+API_KEY = "실제_API_KEY"
+SERVICE = "TbDongFuelCar"
+
+BASE_URL = "http://openapi.seoul.go.kr:8088"
+PAGE_SIZE = 1000
+
+def get_api_data(start, end):
+    url = f"{BASE_URL}/{API_KEY}/json/{SERVICE}/{start}/{end}/"
+
+    response = requests.get(
+        url,
+        timeout=30,
+        headers={"User-Agent": "Mozilla/5.0"}
+    )
+
+    response.raise_for_status()
+
+    data = response.json()
+
+    service_data = data[SERVICE]
+
+    if service_data["RESULT"]["CODE"] != "INFO-000":
+        raise RuntimeError(service_data["RESULT"])
+
+    return service_data
+
+
+# 전체 건수 확인
+first = get_api_data(1, 1)
+
+total_count = first["list_total_count"]
+
+print("전체 데이터:", total_count)
+
+
+# 전체 데이터 수집
+all_rows = []
+
+for start in range(1, total_count + 1, PAGE_SIZE):
+
+    end = min(start + PAGE_SIZE - 1, total_count)
+
+    data = get_api_data(start, end)
+
+    rows = data.get("row", [])
+
+    all_rows.extend(rows)
+
+    print(
+        f"{start:,} ~ {end:,} 수집 완료 / "
+        f"누적 {len(all_rows):,}"
+    )
+
+    time.sleep(0.2)
+
+
+# DataFrame
+df = pd.DataFrame(all_rows)
+
+# 숫자형 변환
+df["SUM_TOT"] = pd.to_numeric(df["SUM_TOT"], errors="coerce")
+
+# CSV 저장
+df.to_csv(
+    "TbDongFuelCar_full.csv",
+    index=False,
+    encoding="utf-8-sig"
+)
+
+print("저장 완료")
+print(df.shape)
+print(df.head())
+
+print(df["FUEL_NM"].unique()) #연료 종류 확인
+
+
+# FUEL_NM이 정확히 '전기'이면 yes, 아니면 no
+df["EV"] = df["FUEL_NM"].eq("전기").map({
+    True: "yes",
+    False: "no"
+})
+
+# CSV 파일로 저장
+df.to_csv(
+    "TbDongFuelCar_EV.csv",
+    index=False,
+    encoding="utf-8-sig"
+)
+
+print("CSV 저장 완료!")
+print("파일명: TbDongFuelCar_EV.csv")
