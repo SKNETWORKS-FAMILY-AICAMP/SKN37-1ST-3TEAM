@@ -86,10 +86,10 @@ df["EV"] = df["FUEL_NM"].eq("전기").map({
 
 # CSV 파일로 저장
 df.to_csv(
-    "TbDongFuelCar_EV.csv",
+    "Seoul_car_register_EV.csv",
     index=False,
     encoding="utf-8-sig"
 )
 
 print("CSV 저장 완료!")
-print("파일명: TbDongFuelCar_EV.csv")
+print("파일명: Seoul_car_register_EV.csv")
