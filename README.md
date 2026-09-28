@@ -39,61 +39,46 @@
 > 최근 전기차 등록이 증가하면서 자동차 구매 과정에서 전기차에 대한 관심이 높아지고 있습니다. 이에 저희는 특정 차량을 추천하기보다 실제 자동차 등록 데이터를 기반으로 전기차를 포함한 다양한 차량 정보를 비교·확인할 수 있는 데이터 기반 서비스를 구축하고자 하였습니다.
 
 
-## 📢 4. 파일 구조
+## 📁 4. 프로젝트 구조 (Directory Structure)
 
->mini_project1
- ┣ .streamlit
- ┃ ┗ secrets.toml
- ┣ .vscode
- ┃ ┗ settings.json
- ┣ data
- ┃ ┣ FAQ
- ┃ ┃ ┣ FAQ_E-pit.py
- ┃ ┃ ┣ FAQ_기아.py
- ┃ ┃ ┣ FAQ_내연기관_기아.csv
- ┃ ┃ ┣ FAQ_전기차_epit.csv
- ┃ ┃ ┣ FAQ_전기차_기아.csv
- ┃ ┃ ┣ FAQ_전기차_무공해차.csv
- ┃ ┃ ┣ FAQ_전기차_차지비.csv
- ┃ ┃ ┗ FAQ_차지비.py
- ┃ ┣ 보조금
- ┃ ┃ ┣ 현대_내연기관.csv
- ┃ ┃ ┣ 현대차_보조금.py
- ┃ ┃ ┣ 현대차_보조금_병합.py
- ┃ ┃ ┣ 현대차_전기수소차_보조금_경기도_전체.csv
- ┃ ┃ ┗ 현대차_전기수소차_보조금_서울.csv
- ┃ ┣ 전국자동차등록현황
- ┃ ┃ ┗ 전국자동차등록현황.csv
- ┃ ┗ 전기차충전소
- ┃ ┃ ┣ 전기차충전소_강원도.csv
- ┃ ┃ ┣ 전기차충전소_경기도.csv
- ┃ ┃ ┣ 전기차충전소_경상도.csv
- ┃ ┃ ┣ 전기차충전소_서울.csv
- ┃ ┃ ┣ 전기차충전소_전라도.csv
- ┃ ┃ ┣ 전기차충전소_제주도.csv
- ┃ ┃ ┗ 전기차충전소_충청도.csv
- ┣ Db
- ┃ ┗ schema.sql
- ┣ Page
- ┃ ┣ __pycache__
- ┃ ┃ ┣ tab1_registration.cpython-312.pyc
- ┃ ┃ ┣ tab2_comparison.cpython-312.pyc
- ┃ ┃ ┣ tab3_infrastructure.cpython-312.pyc
- ┃ ┃ ┗ tab4_faq.cpython-312.pyc
- ┃ ┣ tab1_registration.py
- ┃ ┣ tab2_comparison.py
- ┃ ┣ tab3_infrastructure.py
- ┃ ┗ tab4_faq.py
- ┣ __pycache__
- ┃ ┗ db.cpython-312.pyc
- ┣ .env
- ┣ .gitignore
- ┣ app.py
- ┣ check_counts.py
- ┣ check_db.py
- ┣ db.py
- ┣ etl_pipeline.py
- ┗ requirements.txt
+```text
+mini_project1/
+├── .streamlit/
+│   └── secrets.toml
+├── data/
+│   ├── FAQ/
+│   │   ├── FAQ_내연기관_기아.csv
+│   │   ├── FAQ_전기차_epit.csv
+│   │   ├── FAQ_전기차_기아.csv
+│   │   ├── FAQ_전기차_무공해차.csv
+│   │   └── FAQ_전기차_차지비.csv
+│   ├── 보조금/
+│   │   ├── 현대_내연기관.csv
+│   │   ├── 현대차_전기수소차_보조금_경기도_전체.csv
+│   │   └── 현대차_전기수소차_보조금_서울.csv
+│   ├── 전국자동차등록현황/
+│   │   └── 전국자동차등록현황.csv
+│   └── 전기차충전소/
+│       ├── 전기차충전소_강원도.csv
+│       ├── 전기차충전소_경기도.csv
+│       ├── 전기차충전소_경상도.csv
+│       ├── 전기차충전소_서울.csv
+│       ├── 전기차충전소_전라도.csv
+│       ├── 전기차충전소_제주도.csv
+│       └── 전기차충전소_충청도.csv
+├── Db/
+│   └── schema.sql
+├── Page/
+│   ├── tab1_registration.py
+│   ├── tab2_comparison.py
+│   ├── tab3_infrastructure.py
+│   └── tab4_faq.py
+├── .gitignore
+├── app.py
+├── db.py
+├── etl_pipeline.py
+└── requirements.txt
+```
 
  ## 🗄️ 5. 주요 데이터베이스 구조 (DB)
 
