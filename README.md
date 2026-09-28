@@ -78,7 +78,9 @@ Streamlit의 필터와 시각화 기능을 통해 연도·월·지역별 자동�
 
 ## 🛠️ 프로젝트 문제 및 해결방법
 
-### 👤 이승훈-
+### 👤 김민혁
+---
+### 👤 이승훈
 
 데이터 수집과정중 전국,서울 그리고 경기도 마다 데이터의 제공 단위가 달랐다.
 - 경기도 ->'시' 단위
@@ -120,3 +122,102 @@ Streamlit의 필터와 시각화 기능을 통해 연도·월·지역별 자동�
 
 - **🗺️ 충전소 웹페이지 구현**  
 streamlit 패키지를 이용해 웹사이트를 구현했습니다.  지역별, 충전소 유형(사양), 지원 커넥터 규격, 최소 충전용량, 충전소명 또는 주소 검색 탭을 만들어 사용자에게 필요한 충전소를 찾기 쉽게 구현했습니다. 또한 팀원들에게 초기 지도에 색깔이 많아 들어가 한눈에 충전소가 어디에 있는지  한눈에 파악하기 어렵다는 점을 피드백을 받아 지도의 테마를 더 미니멀하고 충전소 표시 색과 대비되게 바꿨습니다.
+
+---
+
+## 기술스택, 회고록
+
+### 🛠️ 기술스택
+
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Open API](https://img.shields.io/badge/Open%20API-0085CA?style=for-the-badge)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
+
+---
+
+### 📝 회고록
+
+#### 김민혁
+
+#### 김지원
+
+> 방대한 데이터를 수집하고 그 데이터들을 바탕으로 웹사이트를 구현하는 것은 혼자 했다면 막막했을 것이지만 팀원들과 함께해서 수월하게 프로젝트를 완성할 수 있었습니다.  
+> 언제든 도움을 받을 수 있는 팀원들이 있어서 심리적으로 편안했고 실제로 문제 상황이 생길 때 같이 해결해 빠른 시간 내에 해결할 수 있었습니다.  
+> 예상치 못했던 사소한 문제들을 마주하는 것이 당황스럽기도 했지만 해결하는 과정에서 파이썬과 패키지들에 대한 이해도를 높일 수 있었던 것 같습니다.
+
+#### 손혜민
+
+> 자동차 FAQ 크롤링까지는 큰 문제없이 진행했는데, 전기차 보조금 데이터를 추출할 때는 데이터의 양도 많고 거쳐야 하는 과정도 많아서 그런지 크롤링이 잘 되지 않았지만 팀원분의 큰 도움으로 데이터 추출에 성공했습니다.  
+> 그리고 팀장님을 비롯한 팀원분들이 여러 아이디어를 잘 내주셔서 프로젝트의 주제나 흐름도 문제없이 잘 잡히고 훌륭한 결과물이 나온 것 같습니다.  
+> 프로젝트를 진행하며 지금까지 배웠던 부분들을 어떻게 활용하는지 알게 되는 시간이었습니다.  
+> 3팀 모두 고생 많으셨습니다!
+
+#### 이승훈
+
+> 정말 많이 부족했던 저였기에, 뛰어난 팀원들과 함께할 수 있었어서 프로젝트를 잘 진행할 수 있었습니다.  
+> 기술적인 부분에서는 Python과 Pandas를 활용하여 데이터 전처리부터 Streamlit을 이용한 시각화까지 직접 연결해 보면서, 데이터를 수집하고 정제하는 과정에서 많은 시행착오가 있었지만 즐거웠던 경험이었고 전반적인 흐름에 대해서 이해할 수 있었던 시간이었습니다.
+
+---
+
+## 2. 기능 구현 방법
+
+<details>
+<summary>⚡ 전기차 보조금 데이터 출처</summary>
+
+**현대자동차**
+- [전기차 보조금 데이터](https://www.hyundai.com/kr/ko/e/vehicles/eco-incentive)
+
+</details>
+
+<details>
+<summary>❓ 자동차 FAQ 데이터 출처</summary>
+
+**무공해차 통합누리집**
+- [자동차 FAQ](https://ev.or.kr/nportal/partcptn/initFaqAction.do)
+
+**E-pit**
+- [E-pit FAQ](https://www.e-pit.co.kr/brand-web/support/faq)
+
+**차지비**
+- [차지비 FAQ](https://www.gschargev.co.kr/faq.html)
+
+**기아**
+- [기아 FAQ](https://www.kia.com/kr/customer-service/center/faq#none)
+
+</details>
+
+<details>
+<summary>🚗 자동차 등록 데이터 출처</summary>
+
+**서울시**
+- [서울시 자동차 등록 자료](https://data.seoul.go.kr/dataList/OA-15640/S/1/datasetView.do)
+
+**국토교통부**
+- [국토교통 통계자료](https://stat.molit.go.kr/portal/cate/statMetaView.do?hFormId=1244&hRsId=58)
+
+**경기도**
+- [경기도 통계자료](https://www.gg.go.kr/bbs/boardView.do?bsIdx=548&bIdx=51825910&page=1&menuId=2780&bcIdx=)
+
+**KOSIS**
+- [국가통계포털](https://kosis.kr/visual/nsportalStats/detailContents.do?statJipyoId=3707&vStatJipyoId=5222&listId=L)
+
+</details>
+
+<details>
+<summary>🔌 충전소 데이터 출처</summary>
+
+**공공데이터포털**
+- [충전소 데이터](https://www.data.go.kr/iim/api/selectAPIAcountView.do)
+
+</details>
+
+<details>
+<summary>🚘 내연기관 자동차 데이터 출처</summary>
+
+**현대자동차**
+- [차량 견적 및 차량 정보](https://www.hyundai.com/kr/ko/e/vehicles/estimation)
+
+</details>
