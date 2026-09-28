@@ -1,4 +1,6 @@
 # check_counts.py
+# mysql 테이블별 데이터 건수 확인
+
 import pandas as pd
 from sqlalchemy import create_engine, text
 

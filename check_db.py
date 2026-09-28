@@ -1,4 +1,6 @@
 # check_db.py
+# DB 조회 오류확인
+
 import pandas as pd
 from sqlalchemy import create_engine, text
 
