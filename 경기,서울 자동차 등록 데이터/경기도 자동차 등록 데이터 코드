@@ -1,0 +1,160 @@
+import requests
+import pandas as pd
+import time
+
+# ==========================================
+# 1. 기본 설정
+# ==========================================
+
+API_KEY = "abfff8d6bdc44f4eb54a4728fb34cdf2"
+
+BASE_URL = "https://openapi.gg.go.kr/TBGGVEHREGFUELSTM"
+
+PAGE_SIZE = 1000
+
+OUTPUT_FILE = "경기도_연료별_용도별_자동차등록현황.csv"
+
+
+# ==========================================
+# 2. API 호출 함수
+# ==========================================
+
+def get_data(page):
+
+    params = {
+        "KEY": API_KEY,
+        "Type": "json",
+        "pIndex": page,
+        "pSize": PAGE_SIZE
+    }
+
+    response = requests.get(
+        BASE_URL,
+        params=params,
+        timeout=30
+    )
+
+    response.raise_for_status()
+
+    data = response.json()
+
+    # 서비스 확인
+    if "TBGGVEHREGFUELSTM" not in data:
+        print("API 응답:")
+        print(data)
+        raise RuntimeError("TBGGVEHREGFUELSTM 데이터가 없습니다.")
+
+    service = data["TBGGVEHREGFUELSTM"]
+
+    # ==========================================
+    # head 확인
+    # ==========================================
+
+    head = service[0]["head"]
+
+    # 전체 데이터 개수
+    total_count = head[0]["list_total_count"]
+
+    # API 결과 확인
+    result = head[1]["RESULT"]
+
+    if result["CODE"] != "INFO-000":
+        raise RuntimeError(
+            f"{result['CODE']}: {result['MESSAGE']}"
+        )
+
+    # ==========================================
+    # 실제 데이터
+    # ==========================================
+
+    rows = service[1].get("row", [])
+
+    return total_count, rows
+
+
+# ==========================================
+# 3. 전체 데이터 수집
+# ==========================================
+
+all_rows = []
+
+page = 1
+
+while True:
+
+    start = (page - 1) * PAGE_SIZE + 1
+    end = page * PAGE_SIZE
+
+    print(f"{start:,} ~ {end:,} 데이터 요청 중...")
+
+    total_count, rows = get_data(page)
+
+    # 데이터가 없는 경우 종료
+    if not rows:
+        print("더 이상 데이터가 없습니다.")
+        break
+
+    all_rows.extend(rows)
+
+    print(
+        f"현재까지 {len(all_rows):,}개 데이터 수집"
+    )
+
+    # 전체 데이터 수집 완료
+    if len(all_rows) >= total_count:
+        break
+
+    page += 1
+
+    time.sleep(0.2)
+
+
+# ==========================================
+# 4. DataFrame 생성
+# ==========================================
+
+df = pd.DataFrame(all_rows)
+
+
+# ==========================================
+# 5. CSV 저장
+# ==========================================
+
+df.to_csv(
+    OUTPUT_FILE,
+    index=False,
+    encoding="utf-8-sig"
+)
+
+
+# ==========================================
+# 6. 결과 확인
+# ==========================================
+
+print()
+print("=" * 50)
+print("CSV 저장 완료!")
+print("=" * 50)
+
+print(f"총 데이터 개수: {len(df):,}")
+print(f"컬럼 개수: {len(df.columns)}")
+
+print()
+print("컬럼 목록:")
+print(df.columns.tolist())
+
+print()
+print("데이터 미리보기:")
+print(df.head())
+
+# 순수 전기차만 EV = yes
+df["EV"] = df["DTCONT"].eq("전기").map({
+    True: "yes",
+    False: "no"
+})
+
+df.to_csv(
+    "gyeonggi_car_rigister_EV.csv",
+    index=False,
+    encoding="utf-8-sig"
+)

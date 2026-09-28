@@ -1,0 +1,401 @@
+import requests
+import pandas as pd
+import math
+import time
+
+# ============================================================
+# 1. API 설정
+# ============================================================
+
+SERVICE_KEY = "7037c6504734f246f59bd8744555a37323af9a912093bb5e08f14ff007f5cd72"
+
+BASE_URL = (
+    "http://apis.data.go.kr/"
+    "B552584/EvCharger/getChargerInfo"
+)
+
+# API에서 한 번에 가져올 최대 건수
+NUM_OF_ROWS = 9999
+
+# 저장할 CSV 파일명
+OUTPUT_FILE = "ev_charger_all.csv"
+
+
+# ============================================================
+# 2. API 호출 함수
+# ============================================================
+
+def get_page(page_no):
+
+    params = {
+        "serviceKey": SERVICE_KEY,
+        "pageNo": page_no,
+        "numOfRows": NUM_OF_ROWS,
+        "dataType": "JSON"
+    }
+
+    response = requests.get(
+        BASE_URL,
+        params=params,
+        timeout=60
+    )
+
+    response.raise_for_status()
+
+    data = response.json()
+
+    # --------------------------------------------------------
+    # 실제 API 응답 구조
+    #
+    # {
+    #     "items": {
+    #         "item": [
+    #             {...},
+    #             {...}
+    #         ]
+    #     },
+    #     "totalCount": ...
+    # }
+    # --------------------------------------------------------
+
+    if "items" not in data:
+        print("예상하지 못한 API 응답입니다.")
+        print(data)
+        raise Exception("API 응답에 items가 없습니다.")
+
+    items = data.get("items", {})
+
+    # item이 없는 경우
+    if not items:
+        return [], data.get("totalCount", 0)
+
+    # item 추출
+    records = items.get("item", [])
+
+    # 데이터가 1개일 경우에도 리스트로 변환
+    if isinstance(records, dict):
+        records = [records]
+
+    total_count = data.get("totalCount", 0)
+
+    return records, total_count
+
+
+# ============================================================
+# 3. 첫 번째 페이지 호출
+# ============================================================
+
+print("첫 번째 페이지를 호출합니다...")
+
+first_data, total_count = get_page(1)
+
+total_count = int(total_count)
+
+print()
+print("=" * 60)
+print(f"전체 데이터: {total_count:,}건")
+print(f"첫 페이지: {len(first_data):,}건")
+print("=" * 60)
+
+
+# ============================================================
+# 4. 전체 페이지 계산
+# ============================================================
+
+total_pages = math.ceil(
+    total_count / NUM_OF_ROWS
+)
+
+print(f"총 페이지 수: {total_pages:,}페이지")
+
+
+# ============================================================
+# 5. 전체 데이터 저장
+# ============================================================
+
+all_data = []
+
+# 첫 번째 페이지 저장
+all_data.extend(first_data)
+
+print(
+    f"[1/{total_pages}] "
+    f"{len(first_data):,}건 수집 "
+    f"(누적 {len(all_data):,}건)"
+)
+
+
+# ============================================================
+# 6. 나머지 페이지 반복 호출
+# ============================================================
+
+for page in range(2, total_pages + 1):
+
+    try:
+
+        records, _ = get_page(page)
+
+        all_data.extend(records)
+
+        print(
+            f"[{page}/{total_pages}] "
+            f"{len(records):,}건 수집 "
+            f"(누적 {len(all_data):,}건)"
+        )
+
+        # 서버에 너무 빠르게 요청하지 않도록 대기
+        time.sleep(0.2)
+
+    except Exception as e:
+
+        print()
+        print(f"❌ {page}페이지 오류")
+        print(e)
+
+        # 오류 발생 시 잠시 기다렸다가 계속 진행
+        time.sleep(2)
+
+
+# ============================================================
+# 7. 수집 결과 확인
+# ============================================================
+
+print()
+print("=" * 60)
+print("수집 완료")
+print("=" * 60)
+
+print(f"API 전체 데이터 : {total_count:,}건")
+print(f"실제 수집 데이터: {len(all_data):,}건")
+
+
+# ============================================================
+# 8. DataFrame 생성
+# ============================================================
+
+df = pd.DataFrame(all_data)
+
+print()
+print(f"행(row): {len(df):,}")
+print(f"열(column): {len(df.columns)}")
+
+print()
+print("컬럼 목록:")
+print(df.columns.tolist())
+
+
+# ============================================================
+# 9. CSV 저장
+# ============================================================
+
+df.to_csv(
+    OUTPUT_FILE,
+    index=False,
+    encoding="utf-8-sig"
+)
+
+print()
+print("=" * 60)
+print(f"CSV 저장 완료!")
+print(f"파일명: {OUTPUT_FILE}")
+print("=" * 60)
+
+## 행정구역별로 데이터 나누기
+import pandas as pd
+from pathlib import Path
+
+# ==========================================
+# 1. CSV 파일 경로
+# ==========================================
+file_path = r"C:\Users\playdata2\ev_charger_all.csv"
+
+# CSV 불러오기
+df = pd.read_csv(file_path, encoding="utf-8-sig", low_memory=False)
+
+# zcode를 문자열로 변환
+df["zcode"] = (
+    df["zcode"]
+    .astype(str)
+    .str.strip()
+    .str.replace(r"\.0$", "", regex=True)
+)
+
+# ==========================================
+# 2. zcode → 권역 매핑
+# ==========================================
+region_map = {
+
+    # 서울
+    "11": "서울",
+
+    # 경기 + 인천
+    "41": "경기",
+    "28": "경기",
+
+    # 강원
+    "42": "강원도",
+
+    # 충청도
+    "30": "충청도",   # 대전
+    "36": "충청도",   # 세종
+    "43": "충청도",   # 충청북도
+    "44": "충청도",   # 충청남도
+
+    # 전라도
+    "29": "전라도",   # 광주
+    "45": "전라도",   # 전라북도
+    "46": "전라도",   # 전라남도
+
+    # 경상도
+    "26": "경상도",   # 부산
+    "27": "경상도",   # 대구
+    "31": "경상도",   # 울산
+    "47": "경상도",   # 경상북도
+    "48": "경상도",   # 경상남도
+
+    # 제주
+    "50": "제주도",
+}
+
+# 권역 컬럼 생성
+df["region"] = df["zcode"].map(region_map).fillna("기타")
+
+# ==========================================
+# 3. 권역별 데이터 확인
+# ==========================================
+print(df["region"].value_counts())
+
+# ==========================================
+# 4. 권역별로 데이터 분리
+# ==========================================
+seoul_df = df[df["region"] == "서울"].copy()
+gyeonggi_df = df[df["region"] == "경기"].copy()
+gangwon_df = df[df["region"] == "강원도"].copy()
+jeolla_df = df[df["region"] == "전라도"].copy()
+jeju_df = df[df["region"] == "제주도"].copy()
+chungcheong_df = df[df["region"] == "충청도"].copy()
+gyeongsang_df = df[df["region"] == "경상도"].copy()
+
+# ==========================================
+# 5. 각각 CSV로 저장
+# ==========================================
+output_dir = Path(file_path).parent / "지역별_충전소데이터"
+output_dir.mkdir(exist_ok=True)
+
+seoul_df.to_csv(output_dir / "서울.csv", index=False, encoding="utf-8-sig")
+gyeonggi_df.to_csv(output_dir / "경기.csv", index=False, encoding="utf-8-sig")
+gangwon_df.to_csv(output_dir / "강원도.csv", index=False, encoding="utf-8-sig")
+jeolla_df.to_csv(output_dir / "전라도.csv", index=False, encoding="utf-8-sig")
+jeju_df.to_csv(output_dir / "제주도.csv", index=False, encoding="utf-8-sig")
+chungcheong_df.to_csv(output_dir / "충청도.csv", index=False, encoding="utf-8-sig")
+gyeongsang_df.to_csv(output_dir / "경상도.csv", index=False, encoding="utf-8-sig")
+
+print("\n지역별 CSV 저장 완료!")
+print(f"저장 위치: {output_dir}")
+
+# 행정코드로 나눠지지 않은 기타 데이터들은 addr속성을 기준으로 분류
+import pandas as pd
+from pathlib import Path
+
+# 지역별 CSV가 있는 폴더
+folder = Path(r"C:\Users\playdata2\지역별_충전소데이터")
+
+# 기타 파일 불러오기
+etc_path = folder / "기타.csv"
+
+etc_df = pd.read_csv(
+    etc_path,
+    encoding="utf-8-sig",
+    low_memory=False
+)
+
+# addr 결측값 처리
+etc_df["addr"] = etc_df["addr"].fillna("").astype(str).str.strip()
+
+# 주소 시작 문자열 → 이동할 파일
+address_map = {
+    "경기": "경기.csv",
+    "경상": "경상도.csv",
+    "강원": "강원도.csv",
+    "충청": "충청도.csv",
+    "서울": "서울.csv",
+    "전": "전라도.csv",       # ★ 전으로 시작하면 전라도
+    "제주": "제주도.csv",
+}
+
+# 처음에는 기타 데이터 전체
+remaining_df = etc_df.copy()
+
+# 지역별로 이동
+for prefix, filename in address_map.items():
+
+    # addr이 해당 문자열로 시작하는지 확인
+    mask = remaining_df["addr"].str.startswith(prefix, na=False)
+
+    matched_df = remaining_df[mask].copy()
+
+    if matched_df.empty:
+        continue
+
+    target_path = folder / filename
+
+    # 기존 지역 파일 불러오기
+    target_df = pd.read_csv(
+        target_path,
+        encoding="utf-8-sig",
+        low_memory=False
+    )
+
+    # 기존 데이터 + 이동할 데이터
+    target_df = pd.concat(
+        [target_df, matched_df],
+        ignore_index=True
+    )
+
+    # 지역 파일 저장
+    target_df.to_csv(
+        target_path,
+        index=False,
+        encoding="utf-8-sig"
+    )
+
+    print(f"{prefix} → {filename}: {len(matched_df):,}건 이동")
+
+    # 이동한 데이터는 기타에서 제거
+    remaining_df = remaining_df[~mask].copy()
+
+# 남은 데이터만 기타.csv에 저장
+remaining_df.to_csv(
+    etc_path,
+    index=False,
+    encoding="utf-8-sig"
+)
+
+print("\n===== 작업 완료 =====")
+print(f"기타에 남은 데이터: {len(remaining_df):,}건")
+
+#기타에 남은 데이터 중 addr속성이 광으로 시작하면 전라도로 넣음
+import pandas as pd
+
+# 1. 파일 읽기 (엑셀 호환 한글 파일인 경우 'utf-8-sig' 또는 'cp949' 사용)
+file_encoding = "utf-8-sig"
+
+try:
+    df = pd.read_csv(r"C:\Users\playdata2\지역별_충전소데이터\기타.csv", encoding=file_encoding)
+except UnicodeDecodeError:
+    file_encoding = "cp949"
+    df = pd.read_csv(r"C:\Users\playdata2\지역별_충전소데이터\기타.csv", encoding=file_encoding)
+
+# 2. 'addr' 컬럼이 '광'으로 시작하는 조건 마스크 생성 (결측치 제외 처리)
+mask = df["addr"].fillna("").astype(str).str.startswith("광")
+
+# 3. '광'으로 시작하는 데이터 추출 후 '전라도.csv'로 저장
+df_jeolla = df[mask]
+df_jeolla.to_csv(r"C:\Users\playdata2\지역별_충전소데이터\전라도.csv", index=False, encoding=file_encoding)
+
+# 4. 남은 데이터만 다시 '기타.csv'로 저장하여 이동 완료
+df_remaining = df[~mask]
+df_remaining.to_csv(r"C:\Users\playdata2\지역별_충전소데이터\전라도.csv", index=False, encoding=file_encoding)
+
+print(f"전라도.csv로 이동된 데이터: {len(df_jeolla)}건")
+print(f"기타.csv에 남은 데이터: {len(df_remaining)}건")
