@@ -1,0 +1,20 @@
+# git 버전 관리 제외 설정 (민감 정보 보호)
+
+# Python Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Environment Files
+.env
+.env.local
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+
+# Streamlit Caching
+.streamlit/

@@ -1,0 +1,116 @@
+﻿category,model_name,trim,options,price,price_text,img_url,img_alt,변속기,엔진,바디타입,구동방식,img_path
+N,아반떼 N,N,수동,33560000,"33,560,000 원",https://www.hyundai.com/contents/vr360/CN26/trim/NN.png,자가용 가솔린 2.0 터보 수동,수동,,,,car_images/0000_NN.png
+N,아반떼 N,N,DCT,35640000,"35,640,000 원",https://www.hyundai.com/contents/vr360/CN26/trim/NN.png,자가용 가솔린 2.0 터보 DCT,DCT,,,,car_images/0000_NN.png
+승용,디 올 뉴 아반떼,모던,가솔린 / 세단 / A/T,23980000,"23,980,000 원",https://www.hyundai.com/contents/vr360/FN01/trim/RM.png,자가용 가솔린 A/T,A/T,가솔린,세단,,car_images/0001_RM.png
+승용,디 올 뉴 아반떼,프리미엄,가솔린 / 세단 / A/T,27710000,"27,710,000 원",https://www.hyundai.com/contents/vr360/FN01/trim/RP.png,자가용 가솔린 A/T,A/T,가솔린,세단,,car_images/0002_RP.png
+승용,디 올 뉴 아반떼,인스퍼레이션,가솔린 / 세단 / A/T,31520000,"31,520,000 원",https://www.hyundai.com/contents/vr360/FN01/trim/RS.png,자가용 가솔린 A/T,A/T,가솔린,세단,,car_images/0003_RS.png
+승용,더 뉴 그랜저,프리미엄,가솔린 2.5 / 2WD,42450000,"42,450,000 원",https://www.hyundai.com/contents/vr360/GN11/trim/RA.png,자가용 가솔린 2.5 2WD,2WD,가솔린 2.5,,,car_images/0004_RA.png
+승용,더 뉴 그랜저,익스클루시브,가솔린 2.5 / 2WD,46940000,"46,940,000 원",https://www.hyundai.com/contents/vr360/GN11/trim/RB.png,자가용 가솔린 2.5 2WD,2WD,가솔린 2.5,,,car_images/0005_RB.png
+승용,더 뉴 그랜저,캘리그래피,가솔린 2.5 / 2WD,53100000,"53,100,000 원",https://www.hyundai.com/contents/vr360/GN11/trim/RC.png,자가용 가솔린 2.5 2WD,2WD,가솔린 2.5,,,car_images/0006_RC.png
+승용,더 뉴 그랜저,프리미엄,가솔린 3.5 / 2WD,44910000,"44,910,000 원",https://www.hyundai.com/contents/vr360/GN11/trim/SA.png,자가용 가솔린 3.5 2WD,2WD,가솔린 3.5,,,car_images/0007_SA.png
+승용,더 뉴 그랜저,익스클루시브,가솔린 3.5 / 2WD,49410000,"49,410,000 원",https://www.hyundai.com/contents/vr360/GN11/trim/SB.png,자가용 가솔린 3.5 2WD,2WD,가솔린 3.5,,,car_images/0008_SB.png
+승용,더 뉴 그랜저,캘리그래피,가솔린 3.5 / 2WD,55570000,"55,570,000 원",https://www.hyundai.com/contents/vr360/GN11/trim/SC.png,자가용 가솔린 3.5 2WD,2WD,가솔린 3.5,,,car_images/0009_SC.png
+승용,더 뉴 그랜저,프리미엄,가솔린 3.5 / 4WD,47110000,"47,110,000 원",https://www.hyundai.com/contents/vr360/GN11/trim/SA.png,자가용 가솔린 3.5 4WD,4WD,가솔린 3.5,,,car_images/0007_SA.png
+승용,더 뉴 그랜저,익스클루시브,가솔린 3.5 / 4WD,51610000,"51,610,000 원",https://www.hyundai.com/contents/vr360/GN11/trim/SB.png,자가용 가솔린 3.5 4WD,4WD,가솔린 3.5,,,car_images/0008_SB.png
+승용,더 뉴 그랜저,캘리그래피,가솔린 3.5 / 4WD,57770000,"57,770,000 원",https://www.hyundai.com/contents/vr360/GN11/trim/SC.png,자가용 가솔린 3.5 4WD,4WD,가솔린 3.5,,,car_images/0009_SC.png
+승용,더 뉴 그랜저,프리미엄,LPi 3.5 / 2WD,43930000,"43,930,000 원",https://www.hyundai.com/contents/vr360/GN11/trim/LA.png,자가용 LPi 3.5 2WD,2WD,LPi 3.5,,,car_images/0010_LA.png
+승용,더 뉴 그랜저,익스클루시브,LPi 3.5 / 2WD,48420000,"48,420,000 원",https://www.hyundai.com/contents/vr360/GN11/trim/LB.png,자가용 LPi 3.5 2WD,2WD,LPi 3.5,,,car_images/0011_LB.png
+승용,쏘나타 디 엣지,Premium,가솔린 1.6T-GDi,29330000,"29,330,000 원",https://www.hyundai.com/contents/vr360/DN23/trim/RB.png,자가용 스마트스트림 가솔린 1.6 터보,,가솔린 1.6T-GDi,,,car_images/0012_RB.png
+승용,쏘나타 디 엣지,S,가솔린 1.6T-GDi,30650000,"30,650,000 원",https://www.hyundai.com/contents/vr360/DN23/trim/RU.png,자가용 스마트스트림 가솔린 1.6 터보,,가솔린 1.6T-GDi,,,car_images/0013_RU.png
+승용,쏘나타 디 엣지,Exclusive,가솔린 1.6T-GDi,33730000,"33,730,000 원",https://www.hyundai.com/contents/vr360/DN23/trim/RC.png,자가용 스마트스트림 가솔린 1.6 터보,,가솔린 1.6T-GDi,,,car_images/0014_RC.png
+승용,쏘나타 디 엣지,Inspiration,가솔린 1.6T-GDi,36660000,"36,660,000 원",https://www.hyundai.com/contents/vr360/DN23/trim/RE.png,자가용 스마트스트림 가솔린 1.6 터보,,가솔린 1.6T-GDi,,,car_images/0015_RE.png
+승용,쏘나타 디 엣지,Premium,가솔린 2.0,28660000,"28,660,000 원",https://www.hyundai.com/contents/vr360/DN23/trim/SB.png,자가용 스마트스트림 가솔린 2.0,,가솔린 2.0,,,car_images/0016_SB.png
+승용,쏘나타 디 엣지,S,가솔린 2.0,29980000,"29,980,000 원",https://www.hyundai.com/contents/vr360/DN23/trim/SU.png,자가용 스마트스트림 가솔린 2.0,,가솔린 2.0,,,car_images/0017_SU.png
+승용,쏘나타 디 엣지,Exclusive,가솔린 2.0,33060000,"33,060,000 원",https://www.hyundai.com/contents/vr360/DN23/trim/SC.png,자가용 스마트스트림 가솔린 2.0,,가솔린 2.0,,,car_images/0018_SC.png
+승용,쏘나타 디 엣지,Inspiration,가솔린 2.0,36000000,"36,000,000 원",https://www.hyundai.com/contents/vr360/DN23/trim/SE.png,자가용 스마트스트림 가솔린 2.0,,가솔린 2.0,,,car_images/0019_SE.png
+승용,쏘나타 디 엣지,N Line,가솔린 1.6 T-GDi(N라인),37260000,"37,260,000 원",https://www.hyundai.com/contents/vr360/DN23/trim/TL.png,자가용 가솔린 1.6 T-GDi(N라인),,가솔린 1.6 T-GDi(N라인),,,car_images/0020_TL.png
+승용,쏘나타 디 엣지,N Line,가솔린 2.5 T-GDi(N라인),39260000,"39,260,000 원",https://www.hyundai.com/contents/vr360/DN23/trim/NL.png,자가용 가솔린 2.5 T-GDi(N라인),,가솔린 2.5 T-GDi(N라인),,,car_images/0021_NL.png
+승용,쏘나타 디 엣지,Premium,LPi 2.0,29510000,"29,510,000 원",https://www.hyundai.com/contents/vr360/DN23/trim/LB.png,자가용 스마트스트림 LPi 2.0,,LPi 2.0,,,car_images/0022_LB.png
+승용,쏘나타 디 엣지,Exclusive,LPi 2.0,33560000,"33,560,000 원",https://www.hyundai.com/contents/vr360/DN23/trim/LC.png,자가용 스마트스트림 LPi 2.0,,LPi 2.0,,,car_images/0023_LC.png
+승용,쏘나타 디 엣지,Inspiration,LPi 2.0,36250000,"36,250,000 원",https://www.hyundai.com/contents/vr360/DN23/trim/LE.png,자가용 스마트스트림 LPi 2.0,,LPi 2.0,,,car_images/0024_LE.png
+SUV,팰리세이드,익스클루시브,7인승 / 2WD,46100000,"46,100,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TA.png,가솔린 2.5 2WD 7인승,,,7인승,2WD,car_images/0025_TA.png
+SUV,팰리세이드,H-Pick,7인승 / 2WD,52030000,"52,030,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TH.png,가솔린 2.5 2WD 7인승,,,7인승,2WD,car_images/0026_TH.png
+SUV,팰리세이드,XRT,7인승 / 2WD,53820000,"53,820,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TD.png,가솔린 2.5 2WD 7인승,,,7인승,2WD,car_images/0027_TD.png
+SUV,팰리세이드,캘리그래피,7인승 / 2WD,58070000,"58,070,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TC.png,가솔린 2.5 2WD 7인승,,,7인승,2WD,car_images/0028_TC.png
+SUV,팰리세이드,하이루프,7인승 / 2WD,75300000,"75,300,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TE.png,가솔린 2.5 2WD 7인승,,,7인승,2WD,car_images/0029_TE.png
+SUV,팰리세이드,익스클루시브,7인승 / 4WD,48500000,"48,500,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TA.png,가솔린 2.5 4WD 7인승,,,7인승,4WD,car_images/0025_TA.png
+SUV,팰리세이드,H-Pick,7인승 / 4WD,54430000,"54,430,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TH.png,가솔린 2.5 4WD 7인승,,,7인승,4WD,car_images/0026_TH.png
+SUV,팰리세이드,XRT,7인승 / 4WD,56220000,"56,220,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TD.png,가솔린 2.5 4WD 7인승,,,7인승,4WD,car_images/0027_TD.png
+SUV,팰리세이드,캘리그래피,7인승 / 4WD,60470000,"60,470,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TC.png,가솔린 2.5 4WD 7인승,,,7인승,4WD,car_images/0028_TC.png
+SUV,팰리세이드,하이루프,7인승 / 4WD,77700000,"77,700,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TE.png,가솔린 2.5 4WD 7인승,,,7인승,4WD,car_images/0029_TE.png
+SUV,팰리세이드,익스클루시브,9인승 / 2WD,44780000,"44,780,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TA.png,가솔린 2.5 2WD 9인승,,,9인승,2WD,car_images/0025_TA.png
+SUV,팰리세이드,H-Pick,9인승 / 2WD,50400000,"50,400,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TH.png,가솔린 2.5 2WD 9인승,,,9인승,2WD,car_images/0026_TH.png
+SUV,팰리세이드,XRT,9인승 / 2WD,52110000,"52,110,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TD.png,가솔린 2.5 2WD 9인승,,,9인승,2WD,car_images/0027_TD.png
+SUV,팰리세이드,캘리그래피,9인승 / 2WD,56060000,"56,060,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TC.png,가솔린 2.5 2WD 9인승,,,9인승,2WD,car_images/0028_TC.png
+SUV,팰리세이드,하이루프,9인승 / 2WD,72440000,"72,440,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TE.png,가솔린 2.5 2WD 9인승,,,9인승,2WD,car_images/0029_TE.png
+SUV,팰리세이드,익스클루시브,9인승 / 4WD,47060000,"47,060,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TA.png,가솔린 2.5 4WD 9인승,,,9인승,4WD,car_images/0025_TA.png
+SUV,팰리세이드,H-Pick,9인승 / 4WD,52680000,"52,680,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TH.png,가솔린 2.5 4WD 9인승,,,9인승,4WD,car_images/0026_TH.png
+SUV,팰리세이드,XRT,9인승 / 4WD,54390000,"54,390,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TD.png,가솔린 2.5 4WD 9인승,,,9인승,4WD,car_images/0027_TD.png
+SUV,팰리세이드,캘리그래피,9인승 / 4WD,58340000,"58,340,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TC.png,가솔린 2.5 4WD 9인승,,,9인승,4WD,car_images/0028_TC.png
+SUV,팰리세이드,하이루프,9인승 / 4WD,74720000,"74,720,000 원",https://www.hyundai.com/contents/vr360/FX03/trim/TE.png,가솔린 2.5 4WD 9인승,,,9인승,4WD,car_images/0029_TE.png
+SUV,베뉴,Smart,가솔린 1.6 / SUV / IVT / 2WD,19940000,"19,940,000 원",https://www.hyundai.com/contents/vr360/QX07/trim/GA.png,가솔린 1.6 2WD IVT,IVT,가솔린 1.6,SUV,2WD,car_images/0030_GA.png
+SUV,베뉴,PREMIUM,가솔린 1.6 / SUV / IVT / 2WD,22920000,"22,920,000 원",https://www.hyundai.com/contents/vr360/QX07/trim/GD.png,가솔린 1.6 2WD IVT,IVT,가솔린 1.6,SUV,2WD,car_images/0031_GD.png
+SUV,베뉴,FLUX,가솔린 1.6 / SUV / IVT / 2WD,24400000,"24,400,000 원",https://www.hyundai.com/contents/vr360/QX07/trim/GF.png,가솔린 1.6 2WD IVT,IVT,가솔린 1.6,SUV,2WD,car_images/0032_GF.png
+SUV,코나,Modern,가솔린 1.6 터보 / 2WD,24630000,"24,630,000 원",https://www.hyundai.com/contents/vr360/SX19/trim/TA.png,가솔린 1.6 터보 2WD,,가솔린 1.6 터보,,2WD,car_images/0033_TA.png
+SUV,코나,H-Pick,가솔린 1.6 터보 / 2WD,26850000,"26,850,000 원",https://www.hyundai.com/contents/vr360/SX19/trim/TH.png,가솔린 1.6 터보 2WD,,가솔린 1.6 터보,,2WD,car_images/0034_TH.png
+SUV,코나,Premium,가솔린 1.6 터보 / 2WD,29150000,"29,150,000 원",https://www.hyundai.com/contents/vr360/SX19/trim/TB.png,가솔린 1.6 터보 2WD,,가솔린 1.6 터보,,2WD,car_images/0035_TB.png
+SUV,코나,Inspiration,가솔린 1.6 터보 / 2WD,31460000,"31,460,000 원",https://www.hyundai.com/contents/vr360/SX19/trim/TC.png,가솔린 1.6 터보 2WD,,가솔린 1.6 터보,,2WD,car_images/0036_TC.png
+SUV,코나,N Line Inspiration,가솔린 1.6 터보 / 2WD,32450000,"32,450,000 원",https://www.hyundai.com/contents/vr360/SX19/trim/TM.png,가솔린 1.6 터보 2WD,,가솔린 1.6 터보,,2WD,car_images/0037_TM.png
+SUV,코나,Premium,가솔린 1.6 터보 / 4WD,31180000,"31,180,000 원",https://www.hyundai.com/contents/vr360/SX19/trim/TB.png,가솔린 1.6 터보 4WD,,가솔린 1.6 터보,,4WD,car_images/0035_TB.png
+SUV,코나,Inspiration,가솔린 1.6 터보 / 4WD,33490000,"33,490,000 원",https://www.hyundai.com/contents/vr360/SX19/trim/TC.png,가솔린 1.6 터보 4WD,,가솔린 1.6 터보,,4WD,car_images/0036_TC.png
+SUV,코나,N Line Inspiration,가솔린 1.6 터보 / 4WD,34480000,"34,480,000 원",https://www.hyundai.com/contents/vr360/SX19/trim/TM.png,가솔린 1.6 터보 4WD,,가솔린 1.6 터보,,4WD,car_images/0037_TM.png
+SUV,코나,Modern,가솔린 2.0 / 2WD,23930000,"23,930,000 원",https://www.hyundai.com/contents/vr360/SX19/trim/KA.png,가솔린 2.0 2WD,,가솔린 2.0,,2WD,car_images/0038_KA.png
+SUV,코나,H-Pick,가솔린 2.0 / 2WD,26250000,"26,250,000 원",https://www.hyundai.com/contents/vr360/SX19/trim/KH.png,가솔린 2.0 2WD,,가솔린 2.0,,2WD,car_images/0039_KH.png
+SUV,싼타페,익스클루시브,5인승 / 2WD,36570000,"36,570,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TC.png,가솔린 2.5T 2WD 오토 5인승,,,5인승,2WD,car_images/0040_TC.png
+SUV,싼타페,프레스티지,5인승 / 2WD,39440000,"39,440,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TF.png,가솔린 2.5T 2WD 오토 5인승,,,5인승,2WD,car_images/0041_TF.png
+SUV,싼타페,H-Pick,5인승 / 2WD,42090000,"42,090,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TM.png,가솔린 2.5T 2WD 오토 5인승,,,5인승,2WD,car_images/0042_TM.png
+SUV,싼타페,캘리그래피,5인승 / 2WD,45470000,"45,470,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TH.png,가솔린 2.5T 2WD 오토 5인승,,,5인승,2WD,car_images/0043_TH.png
+SUV,싼타페,익스클루시브,5인승 / 4WD,38800000,"38,800,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TC.png,가솔린 2.5T 4WD 오토 5인승,,,5인승,4WD,car_images/0040_TC.png
+SUV,싼타페,프레스티지,5인승 / 4WD,41670000,"41,670,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TF.png,가솔린 2.5T 4WD 오토 5인승,,,5인승,4WD,car_images/0041_TF.png
+SUV,싼타페,H-Pick,5인승 / 4WD,44320000,"44,320,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TM.png,가솔린 2.5T 4WD 오토 5인승,,,5인승,4WD,car_images/0042_TM.png
+SUV,싼타페,캘리그래피,5인승 / 4WD,47700000,"47,700,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TH.png,가솔린 2.5T 4WD 오토 5인승,,,5인승,4WD,car_images/0043_TH.png
+SUV,싼타페,익스클루시브,6인승 / 2WD,37610000,"37,610,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TC.png,가솔린 2.5T 2WD 오토 6인승,,,6인승,2WD,car_images/0040_TC.png
+SUV,싼타페,프레스티지,6인승 / 2WD,40480000,"40,480,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TF.png,가솔린 2.5T 2WD 오토 6인승,,,6인승,2WD,car_images/0041_TF.png
+SUV,싼타페,H-Pick,6인승 / 2WD,43130000,"43,130,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TM.png,가솔린 2.5T 2WD 오토 6인승,,,6인승,2WD,car_images/0042_TM.png
+SUV,싼타페,캘리그래피,6인승 / 2WD,46510000,"46,510,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TH.png,가솔린 2.5T 2WD 오토 6인승,,,6인승,2WD,car_images/0043_TH.png
+SUV,싼타페,익스클루시브,6인승 / 4WD,39840000,"39,840,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TC.png,가솔린 2.5T 4WD 오토 6인승,,,6인승,4WD,car_images/0040_TC.png
+SUV,싼타페,프레스티지,6인승 / 4WD,42710000,"42,710,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TF.png,가솔린 2.5T 4WD 오토 6인승,,,6인승,4WD,car_images/0041_TF.png
+SUV,싼타페,H-Pick,6인승 / 4WD,45360000,"45,360,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TM.png,가솔린 2.5T 4WD 오토 6인승,,,6인승,4WD,car_images/0042_TM.png
+SUV,싼타페,캘리그래피,6인승 / 4WD,48740000,"48,740,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TH.png,가솔린 2.5T 4WD 오토 6인승,,,6인승,4WD,car_images/0043_TH.png
+SUV,싼타페,익스클루시브,7인승 / 2WD,37260000,"37,260,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TC.png,가솔린 2.5T 2WD 오토 7인승,,,7인승,2WD,car_images/0040_TC.png
+SUV,싼타페,프레스티지,7인승 / 2WD,40130000,"40,130,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TF.png,가솔린 2.5T 2WD 오토 7인승,,,7인승,2WD,car_images/0041_TF.png
+SUV,싼타페,H-Pick,7인승 / 2WD,42780000,"42,780,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TM.png,가솔린 2.5T 2WD 오토 7인승,,,7인승,2WD,car_images/0042_TM.png
+SUV,싼타페,캘리그래피,7인승 / 2WD,46160000,"46,160,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TH.png,가솔린 2.5T 2WD 오토 7인승,,,7인승,2WD,car_images/0043_TH.png
+SUV,싼타페,익스클루시브,7인승 / 4WD,39490000,"39,490,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TC.png,가솔린 2.5T 4WD 오토 7인승,,,7인승,4WD,car_images/0040_TC.png
+SUV,싼타페,프레스티지,7인승 / 4WD,42360000,"42,360,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TF.png,가솔린 2.5T 4WD 오토 7인승,,,7인승,4WD,car_images/0041_TF.png
+SUV,싼타페,H-Pick,7인승 / 4WD,45010000,"45,010,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TM.png,가솔린 2.5T 4WD 오토 7인승,,,7인승,4WD,car_images/0042_TM.png
+SUV,싼타페,캘리그래피,7인승 / 4WD,48390000,"48,390,000 원",https://www.hyundai.com/contents/vr360/MX07/trim/TH.png,가솔린 2.5T 4WD 오토 7인승,,,7인승,4WD,car_images/0043_TH.png
+SUV,투싼,Modern,2WD,28440000,"28,440,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TD.png,1.6 가솔린 터보 2WD DCT,,,,2WD,car_images/0044_TD.png
+SUV,투싼,Premium,2WD,31120000,"31,120,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TC.png,1.6 가솔린 터보 2WD DCT,,,,2WD,car_images/0045_TC.png
+SUV,투싼,H-Pick,2WD,32010000,"32,010,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TH.png,1.6 가솔린 터보 2WD DCT,,,,2WD,car_images/0046_TH.png
+SUV,투싼,Inspiration,2WD,34560000,"34,560,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TP.png,1.6 가솔린 터보 2WD DCT,,,,2WD,car_images/0047_TP.png
+SUV,투싼,N Line,2WD,35410000,"35,410,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TM.png,1.6 가솔린 터보 2WD DCT,,,,2WD,car_images/0048_TM.png
+SUV,투싼,Modern,4WD,30420000,"30,420,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TD.png,1.6 가솔린 터보 4WD DCT,,,,4WD,car_images/0044_TD.png
+SUV,투싼,Premium,4WD,33100000,"33,100,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TC.png,1.6 가솔린 터보 4WD DCT,,,,4WD,car_images/0045_TC.png
+SUV,투싼,H-Pick,4WD,33990000,"33,990,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TH.png,1.6 가솔린 터보 4WD DCT,,,,4WD,car_images/0046_TH.png
+SUV,투싼,Inspiration,4WD,36540000,"36,540,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TP.png,1.6 가솔린 터보 4WD DCT,,,,4WD,car_images/0047_TP.png
+SUV,투싼,N Line,4WD,37390000,"37,390,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TM.png,1.6 가솔린 터보 4WD DCT,,,,4WD,car_images/0048_TM.png
+SUV,2027 캐스퍼,Modern,2WD,28440000,"28,440,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TD.png,1.6 가솔린 터보 2WD DCT,,,,2WD,car_images/0044_TD.png
+SUV,2027 캐스퍼,Premium,2WD,31120000,"31,120,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TC.png,1.6 가솔린 터보 2WD DCT,,,,2WD,car_images/0045_TC.png
+SUV,2027 캐스퍼,H-Pick,2WD,32010000,"32,010,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TH.png,1.6 가솔린 터보 2WD DCT,,,,2WD,car_images/0046_TH.png
+SUV,2027 캐스퍼,Inspiration,2WD,34560000,"34,560,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TP.png,1.6 가솔린 터보 2WD DCT,,,,2WD,car_images/0047_TP.png
+SUV,2027 캐스퍼,N Line,2WD,35410000,"35,410,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TM.png,1.6 가솔린 터보 2WD DCT,,,,2WD,car_images/0048_TM.png
+SUV,2027 캐스퍼,Modern,4WD,30420000,"30,420,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TD.png,1.6 가솔린 터보 4WD DCT,,,,4WD,car_images/0044_TD.png
+SUV,2027 캐스퍼,Premium,4WD,33100000,"33,100,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TC.png,1.6 가솔린 터보 4WD DCT,,,,4WD,car_images/0045_TC.png
+SUV,2027 캐스퍼,H-Pick,4WD,33990000,"33,990,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TH.png,1.6 가솔린 터보 4WD DCT,,,,4WD,car_images/0046_TH.png
+SUV,2027 캐스퍼,Inspiration,4WD,36540000,"36,540,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TP.png,1.6 가솔린 터보 4WD DCT,,,,4WD,car_images/0047_TP.png
+SUV,2027 캐스퍼,N Line,4WD,37390000,"37,390,000 원",https://www.hyundai.com/contents/vr360/NX17/trim/TM.png,1.6 가솔린 터보 4WD DCT,,,,4WD,car_images/0048_TM.png
+MPV,더 뉴 스타리아 킨더,Modern,LPG 3.5 / 투어러 / 2WD 오토,41660000,"41,660,000 원",https://www.hyundai.com/contents/vr360/US36/trim/BM.png,어린이보호차 11인승 LPG 3.5 2WD 오토,2WD 오토,LPG 3.5,투어러,,car_images/0049_BM.png
+MPV,더 뉴 스타리아 킨더,Modern,LPG 3.5 / 투어러 / 2WD 오토,44530000,"44,530,000 원",https://www.hyundai.com/contents/vr360/US36/trim/FM.png,어린이보호차 15인승 LPG 3.5 2WD 오토,2WD 오토,LPG 3.5,투어러,,car_images/0050_FM.png
+MPV,더 뉴 스타리아 라운지,Inspiration,LPG 3.5 / 라운지 / 2WD 오토,47720000,"47,720,000 원",https://www.hyundai.com/contents/vr360/US31/trim/LE.png,자가용 7인승 LPG 3.5 2WD 오토,2WD 오토,LPG 3.5,라운지,,car_images/0051_LE.png
+MPV,더 뉴 스타리아,Smart,카고,32590000,"32,590,000 원",https://www.hyundai.com/contents/vr360/US30/trim/3S.png,자가용 3인승 LPG 3.5 2WD 오토,,,카고,,car_images/0052_3S.png
+MPV,더 뉴 스타리아,Smart(센터콘솔),카고,33460000,"33,460,000 원",https://www.hyundai.com/contents/vr360/US30/trim/5C.png,자가용 5인승 LPG 3.5 2WD 오토,,,카고,,car_images/0053_5C.png
+MPV,더 뉴 스타리아,Modern,카고,34120000,"34,120,000 원",https://www.hyundai.com/contents/vr360/US30/trim/3M.png,자가용 3인승 LPG 3.5 2WD 오토,,,카고,,car_images/0054_3M.png
+MPV,더 뉴 스타리아,Modern,카고,34900000,"34,900,000 원",https://www.hyundai.com/contents/vr360/US30/trim/5M.png,자가용 5인승 LPG 3.5 2WD 오토,,,카고,,car_images/0055_5M.png
+MPV,더 뉴 스타리아,Smart,투어러,35020000,"35,020,000 원",https://www.hyundai.com/contents/vr360/US30/trim/TS.png,자가용 11인승 LPG 3.5 2WD 오토,,,투어러,,car_images/0056_TS.png
+MPV,더 뉴 스타리아,Modern,투어러,36590000,"36,590,000 원",https://www.hyundai.com/contents/vr360/US30/trim/TM.png,자가용 11인승 LPG 3.5 2WD 오토,,,투어러,,car_images/0057_TM.png
