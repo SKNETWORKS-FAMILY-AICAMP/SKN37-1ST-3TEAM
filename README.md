@@ -31,8 +31,8 @@
    - 최근 전기차 신규 등록이 크게 증가하면서 자동차 구매 과정에서 전기차를 하나의 선택지로 고려하는 소비자도 증가하고 있습니다. ([관련 뉴스 기사 보기](https://m.wowtv.co.kr/NewsCenter/News/Read?articleId=A202603300193))
 3. **통합 정보 제공의 필요성**
    - 실제 자동차 등록 데이터를 기반으로 지역별·연료별 현황과 전기차 보조금, 충전소 정보를 한곳에서 확인하고 비교할 수 있는 서비스가 필요하다고 판단하였습니다.
-   - <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/ecb5abe8-18e2-400d-a5f2-71b48b1cb139" />
-   - <img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/6d050940-f545-4078-9430-db13e11aabc4" />
+    <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/ecb5abe8-18e2-400d-a5f2-71b48b1cb139" />
+    <img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/6d050940-f545-4078-9430-db13e11aabc4" />
 
 > 최근 전기차 등록이 증가하면서 자동차 구매 과정에서 전기차에 대한 관심이 높아지고 있습니다. 이에 저희는 특정 차량을 추천하기보다 실제 자동차 등록 데이터를 기반으로 전기차를 포함한 다양한 차량 정보를 비교·확인할 수 있는 데이터 기반 서비스를 구축하고자 하였습니다.
 
