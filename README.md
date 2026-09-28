@@ -53,14 +53,14 @@
 
 ## ✨ 6. 기능
 
-### 📊 전국 자동차 현황 & 전기차 보급 추이 대시보드
+### 📊 1) 전국 자동차 현황 & 전기차 보급 추이 대시보드
 - **연료별 자동차 등록 현황:** 전국 기준 내연기관, 하이브리드, 전기차, 수소차의 현재 등록 대수 및 비중 시각화
 - **기간별 전기차 등록 추이:** 시계열 데이터를 통해 국내 전기차 시장의 성장세와 친환경차 전환 속도를 한눈에 파악
 <img width="1912" height="860" alt="11" src="https://github.com/user-attachments/assets/19ecbc24-5c96-4c7a-963a-109b253e5b82" />
 <img width="1802" height="587" alt="22" src="https://github.com/user-attachments/assets/357d70b2-d845-443f-8524-abb5eb33ad4c" />
 <img width="1827" height="497" alt="33" src="https://github.com/user-attachments/assets/a1f86ed3-1177-49e2-b942-5045b5bfce7f" />
 
-### ⚖️ 서울·경기 예산 맞춤형 차량 비교 (전기차 vs 내연기관)
+### ⚖️ 2) 서울·경기 예산 맞춤형 차량 비교 (전기차 vs 내연기관)
 - **예산 범위 설정:** 사용자가 소유한 예산 및 지역선택
 - **보조금 자동 산정:** 지역별전기차 보조금을 적용한 실구매가 기준 데이터 제공
 - **1:1 모델 매칭 비교:** 설정한 예산 범위 내에서 구매 가능한 전기차 모델과 동급 내연기관 모델을 한 화면에서 대조하여 추천 
@@ -68,13 +68,13 @@
 <img width="1557" height="610" alt="55" src="https://github.com/user-attachments/assets/5b645132-2a02-4d5b-9a9a-274da914c247" />
 <img width="1556" height="252" alt="66" src="https://github.com/user-attachments/assets/e85ba169-0c0d-48c0-8811-62380ce68f4b" />
 
-### 🔌 전기차 충전소 위치 검색
+### 🔌 3) 전기차 충전소 인프라 현황
 - **지역 및 키워드 기반 검색:** 서울·경기 및 전국 주요 지역의 전기차 충전소 위치 탐색
 - **충전소 상세 정보:** 충전기 타입(급속/완속), 운영 기관, 위치 정보를 직관적인 지도/리스트로 제공 
 <img width="1561" height="392" alt="77" src="https://github.com/user-attachments/assets/acef94ab-f00a-457d-94dd-756c9279d101" />
 <img width="1812" height="801" alt="88" src="https://github.com/user-attachments/assets/e688aa49-e043-4ce6-b1f1-ce8a25034e3c" />
 
-### ❓ 내연기관 vs 전기차 카테고리별 FAQ
+### ❓ 4) 통합 FAQ
 - **맞춤형 카테고리 분류:** '전기차' / '내연기관' 카테고리별 자주 묻는 질문 구성
 - **구매 고민 해소:** 충전 요금 체계, 겨울철 주행거리 관리, 배터리 보증, 내연기관 대비 유지비 절감액 등 소비자가 자주 궁금해하는 유용한 정보 제공 
 <img width="1561" height="817" alt="99" src="https://github.com/user-attachments/assets/80d55ac2-35e4-4e22-a4bd-0ba4c0f5b586" />
